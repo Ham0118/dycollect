@@ -196,6 +196,10 @@ npm run build
 
 Reproducible issues and pull requests are welcome. Never commit `data`, `.browser`, models, virtual environments, caches, secrets, or personal logs.
 
+## Acknowledgments
+
+Thanks to the  [Linux.do](https://linux.do) community.
+
 ## Security, privacy, and license
 
 There is currently no authentication. Other LAN users can operate jobs when the server binds to `0.0.0.0`;

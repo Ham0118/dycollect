@@ -199,6 +199,10 @@ npm run build
 - **找不到 FFmpeg：**确认 `ffmpeg -version` 和 `ffprobe -version` 能在启动服务的同一终端运行。
 - **模型哈希失败：**检查 Hugging Face 网络和磁盘空间；移走无效模型目录后重新初始化，不要覆盖需要保留的文件。
 
+## 致谢
+
+感谢 [Linux.do](https://linux.do) 
+
 ## 贡献、安全与许可证
 当前版本没有身份验证。绑定 `0.0.0.0` 时，同一局域网中的其他用户可以操作任务；
 
