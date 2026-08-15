@@ -1,0 +1,27 @@
+{
+  "name": "dycollect",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n web,server -c blue,magenta \"npm run dev -w @dycollect/web\" \"npm run dev -w @dycollect/server\"",
+    "build": "npm run check -ws --if-present && npm run build -w @dycollect/web",
+    "start": "npm run start -w @dycollect/server",
+    "check": "npm run check -ws --if-present",
+    "test": "npm run test -ws --if-present",
+    "cli": "npm run cli -w @dycollect/server --",
+    "reset:database": "npm run reset:database -w @dycollect/server --",
+    "setup:model": "npm run setup:model -w @dycollect/server",
+    "setup:model:cpu": "npm run setup:model -w @dycollect/server -- --device cpu",
+    "setup:model:cuda": "npm run setup:model -w @dycollect/server -- --device cuda"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.2"
+  }
+}

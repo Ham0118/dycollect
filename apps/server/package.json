@@ -1,0 +1,30 @@
+{
+  "name": "@dycollect/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "cli": "tsx src/cli.ts",
+    "reset:database": "tsx scripts/reset-database.ts",
+    "setup:model": "tsx scripts/setup-model.ts"
+  },
+  "dependencies": {
+    "@dycollect/shared": "1.0.0",
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0",
+    "marked": "^18.0.7",
+    "playwright": "^1.54.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.17.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
