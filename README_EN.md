@@ -51,10 +51,9 @@ ffprobe -version
 
 ### 2. Get the source and enter the project
 
-Replace `<repository-url>` with the published repository URL:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:Ham0118/dycollect.git
 cd dycollect
 ```
 

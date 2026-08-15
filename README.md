@@ -53,7 +53,7 @@ ffprobe -version
 ### 2. 获取代码并进入项目
 
 ```bash
-git clone https://github.com/Ham0118/dycollect
+git clone git@github.com:Ham0118/dycollect.git
 cd dycollect
 ```
 
