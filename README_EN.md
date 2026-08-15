@@ -198,6 +198,6 @@ Reproducible issues and pull requests are welcome. Never commit `data`, `.browse
 
 ## Security, privacy, and license
 
-There is currently no authentication. Other LAN users can operate jobs when the server binds to `0.0.0.0`; do not expose it directly to the internet. Sanitize `data` and `.browser` before sharing.
+There is currently no authentication. Other LAN users can operate jobs when the server binds to `0.0.0.0`;
 
 DyCollect is available under the [MIT License](LICENSE). `Qwen/Qwen3-ASR-0.6B-hf` uses Apache-2.0. Model weights are downloaded from a pinned Hugging Face revision and are not included in this repository.
